@@ -133,7 +133,9 @@ a {
 
 .brand img {
   filter: drop-shadow(0 10px 16px rgba(0, 0, 0, 0.38));
-  height: 72px;
+  height: 64px;
+  max-width: min(58vw, 250px);
+  object-fit: contain;
   position: relative;
   width: auto;
   z-index: 1;
@@ -861,6 +863,7 @@ a {
   }
 
   .brand img {
-    height: 58px;
+    height: 52px;
+    max-width: min(70vw, 220px);
   }
 }
