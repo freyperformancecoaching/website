@@ -884,13 +884,17 @@ a {
 .article-hero-panel {
   align-items: flex-start;
   display: flex;
+  justify-content: center;
   min-height: 0;
   padding: 1.55rem 1.7rem;
 }
 
 .article-hero-summary {
+  align-items: center;
+  display: grid;
   max-width: none;
   position: relative;
+  text-align: center;
   z-index: 1;
 }
 
@@ -932,6 +936,14 @@ a {
 
 .article-page-hero .article-list {
   margin-bottom: 0;
+}
+
+.article-page-hero .article-list li {
+  padding-left: 0;
+}
+
+.article-page-hero .article-list li::before {
+  display: none;
 }
 
 .cta-panel {
