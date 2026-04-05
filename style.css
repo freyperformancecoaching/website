@@ -722,6 +722,7 @@ a {
   align-items: stretch;
   gap: 2.25rem;
   grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  margin-top: 0.4rem;
 }
 
 .feature-band-spotlight > div:first-child {
@@ -888,7 +889,7 @@ a {
 }
 
 .article-hero-summary {
-  max-width: 44rem;
+  max-width: none;
   position: relative;
   z-index: 1;
 }
@@ -909,17 +910,20 @@ a {
 }
 
 .article-page-hero .page-hero-copy {
-  max-width: 66rem;
+  max-width: none;
+  width: 100%;
 }
 
 .article-page-hero h1 {
-  font-size: clamp(3.2rem, 6vw, 5.9rem);
-  max-width: 15ch;
+  font-size: clamp(2.55rem, 4.35vw, 4.85rem);
+  line-height: 0.92;
+  max-width: none;
 }
 
 .article-page-hero .hero-panel {
-  max-width: 52rem;
+  max-width: none;
   min-height: 0;
+  width: 100%;
 }
 
 .article-page-hero .hero-panel::after {
