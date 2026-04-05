@@ -603,18 +603,18 @@ a {
 }
 
 .page-hero {
-  align-items: end;
+  align-items: center;
   display: grid;
-  gap: 2rem;
+  gap: 1.75rem;
   grid-template-columns: 1.05fr 0.95fr;
-  padding: 4.5rem 0 3.8rem;
+  padding: 2.9rem 0 2.4rem;
 }
 
 .page-hero .hero-panel {
   background: linear-gradient(140deg, rgba(13, 14, 18, 0.98) 0%, rgba(31, 9, 9, 0.98) 100%);
   border-radius: 32px;
   color: #fff;
-  min-height: 430px;
+  min-height: 320px;
   overflow: hidden;
   position: relative;
 }
@@ -715,6 +715,21 @@ a {
 
 .feature-band-spotlight .blog-card {
   height: 100%;
+  padding: 2rem;
+}
+
+.feature-band-spotlight {
+  align-items: stretch;
+  gap: 2.25rem;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+}
+
+.feature-band-spotlight > div:first-child {
+  max-width: 36rem;
+}
+
+.feature-band-spotlight .blog-card h3 {
+  font-size: clamp(2.1rem, 3vw, 2.75rem);
 }
 
 .article-layout {
@@ -866,12 +881,14 @@ a {
 }
 
 .article-hero-panel {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
-  padding: 2rem;
+  min-height: 0;
+  padding: 1.55rem 1.7rem;
 }
 
 .article-hero-summary {
+  max-width: 44rem;
   position: relative;
   z-index: 1;
 }
@@ -879,10 +896,38 @@ a {
 .article-hero-summary h2 {
   color: #fff;
   font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
-  font-size: clamp(2.2rem, 4vw, 3rem);
-  line-height: 0.95;
-  margin-bottom: 1rem;
+  font-size: clamp(1.9rem, 3vw, 2.4rem);
+  line-height: 1;
+  margin-bottom: 0.9rem;
   text-transform: uppercase;
+}
+
+.article-page-hero {
+  align-items: start;
+  gap: 1.2rem;
+  grid-template-columns: 1fr;
+}
+
+.article-page-hero .page-hero-copy {
+  max-width: 66rem;
+}
+
+.article-page-hero h1 {
+  font-size: clamp(3.2rem, 6vw, 5.9rem);
+  max-width: 15ch;
+}
+
+.article-page-hero .hero-panel {
+  max-width: 52rem;
+  min-height: 0;
+}
+
+.article-page-hero .hero-panel::after {
+  display: none;
+}
+
+.article-page-hero .article-list {
+  margin-bottom: 0;
 }
 
 .cta-panel {
@@ -975,7 +1020,7 @@ a {
 
   .hero-visual,
   .page-hero .hero-panel {
-    min-height: 420px;
+    min-height: 300px;
   }
 
   .article-sidebar-card {
@@ -1004,12 +1049,16 @@ a {
 
   .hero-shell,
   .page-hero {
-    padding-top: 3rem;
+    padding-top: 2.4rem;
   }
 
   .hero h1,
   .page-hero h1 {
     max-width: 100%;
+  }
+
+  .article-hero-panel {
+    padding: 1.35rem 1.2rem;
   }
 
   .hero-metrics,
