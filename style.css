@@ -411,7 +411,7 @@ a {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin-top: -2rem;
+  margin-top: 0.5rem;
   overflow: hidden;
   padding: 2.2rem;
 }
