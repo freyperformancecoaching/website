@@ -947,6 +947,15 @@ a {
   width: 100%;
 }
 
+.foot-strike-page-hero .page-hero-copy {
+  text-align: center;
+}
+
+.foot-strike-page-hero h1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .article-page-hero h1 {
   font-size: clamp(2.55rem, 4.35vw, 4.85rem);
   line-height: 0.92;
