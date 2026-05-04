@@ -1127,19 +1127,33 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .hero-visual {
+    display: grid;
+    gap: 1rem;
+    min-height: auto;
+  }
+
   .hero-photo-card {
-    inset: 0;
+    inset: auto;
+    min-height: 420px;
+    order: 2;
+    position: relative;
   }
 
   .badge-card {
-    right: 1rem;
-    top: 1rem;
+    max-width: 100%;
+    order: 1;
+    position: relative;
+    right: auto;
+    top: auto;
   }
 
   .floating-card {
-    bottom: 1rem;
-    left: 1rem;
-    max-width: calc(100% - 2rem);
+    bottom: auto;
+    left: auto;
+    max-width: 100%;
+    order: 3;
+    position: relative;
   }
 
   .section-heading {
