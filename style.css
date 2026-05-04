@@ -602,6 +602,11 @@ a {
   gap: 1rem;
 }
 
+.about-story {
+  margin: 0 auto;
+  max-width: 760px;
+}
+
 .page-hero {
   align-items: center;
   display: grid;
@@ -630,6 +635,13 @@ a {
   content: "";
   inset: 0;
   position: absolute;
+}
+
+.page-hero .hero-panel .hero-panel-badge {
+  bottom: 1.5rem;
+  left: 1.5rem;
+  position: absolute;
+  z-index: 2;
 }
 
 .golf-page .page-hero {
