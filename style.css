@@ -645,14 +645,15 @@ a {
 }
 
 .about-page .about-hero-panel {
-  align-items: center;
-  background:
-    radial-gradient(circle at center, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 28%, rgba(16, 18, 24, 0.98) 72%),
-    linear-gradient(145deg, rgba(17, 19, 24, 0.98) 0%, rgba(11, 12, 16, 0.98) 100%);
+  align-items: flex-end;
+  background: transparent;
   display: flex;
   justify-content: center;
-  min-height: 460px;
-  padding: 1.5rem 1.5rem 4.5rem;
+  justify-self: end;
+  min-height: 0;
+  overflow: visible;
+  padding: 0 0 2rem;
+  width: min(100%, 420px);
 }
 
 .about-page .about-hero-panel::after {
@@ -662,10 +663,10 @@ a {
 .about-page .about-hero-panel img {
   border-radius: 26px;
   box-shadow: 0 24px 52px rgba(0, 0, 0, 0.36);
+  display: block;
   height: auto;
-  max-height: 100%;
-  object-fit: contain;
-  width: min(100%, 360px);
+  object-fit: cover;
+  width: 100%;
 }
 
 .golf-page .page-hero {
@@ -1111,6 +1112,10 @@ a {
   .hero-visual,
   .page-hero .hero-panel {
     min-height: 300px;
+  }
+
+  .about-page .about-hero-panel {
+    justify-self: center;
   }
 
   .article-sidebar-card {
